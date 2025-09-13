@@ -15,22 +15,22 @@ const Certifications = () => {
       logo: "🏆"
     },
     {
-      name: "Certified Kubernetes Administrator (CKA)",
-      issuer: "Cloud Native Computing Foundation",
-      date: "January 2023",
+      name: "Security+",
+      issuer: "CompTIA",
+      date: "October 2024",
       status: "Active",
       credentialId: "CKA-2023-567890",
-      description: "Hands-on certification validating skills in Kubernetes administration and troubleshooting.",
+  description: "need to add description",
       skills: ["Container Orchestration", "Cluster Management", "Networking", "Security", "Troubleshooting"],
       logo: "⚙️"
     },
     {
-      name: "Google Cloud Professional Cloud Architect",
-      issuer: "Google Cloud",
-      date: "September 2022",
+  name: "A+",
+  issuer: "CompTIA",
+  date: "June 2024",
       status: "Active",
       credentialId: "GCP-PCA-2022-112233",
-      description: "Professional-level certification for designing and managing robust, secure, scalable Google Cloud solutions.",
+  description: "need to add description",
       skills: ["GCP Services", "Infrastructure Design", "Security", "Data Analytics", "Machine Learning"],
       logo: "☁️"
     }
@@ -41,9 +41,6 @@ const Certifications = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 text-professional-navy">Certifications</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Professional certifications demonstrating expertise in cloud technologies and modern development practices
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
