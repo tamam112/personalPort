@@ -5,12 +5,12 @@ import { Shield, Calendar, ExternalLink, CheckCircle } from "lucide-react";
 const Certifications = () => {
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect - Professional",
-      issuer: "Amazon Web Services",
-      date: "March 2023",
-      status: "Active",
-      credentialId: "AWS-ASA-2023-001234",
-      description: "Advanced certification demonstrating expertise in designing distributed applications and systems on AWS platform.",
+  name: "Systems Security Certified Practicioner (SSCP)",
+  issuer: "ISC2",
+  date: "July 2025 (Associate Status)",
+  status: "Active",
+  credentialId: "AWS-ASA-2023-001234",
+  description: "need to add description",
       skills: ["Cloud Architecture", "Security", "Migration", "Cost Optimization", "Well-Architected Framework"],
       logo: "🏆"
     },
@@ -33,36 +33,6 @@ const Certifications = () => {
       description: "Professional-level certification for designing and managing robust, secure, scalable Google Cloud solutions.",
       skills: ["GCP Services", "Infrastructure Design", "Security", "Data Analytics", "Machine Learning"],
       logo: "☁️"
-    },
-    {
-      name: "Certified ScrumMaster (CSM)",
-      issuer: "Scrum Alliance",
-      date: "June 2021",
-      status: "Active",
-      credentialId: "CSM-2021-445566",
-      description: "Certification demonstrating understanding of Scrum framework and ability to facilitate Agile teams.",
-      skills: ["Agile Methodology", "Team Facilitation", "Sprint Planning", "Retrospectives", "Stakeholder Management"],
-      logo: "🎯"
-    },
-    {
-      name: "MongoDB Certified Developer",
-      issuer: "MongoDB University",
-      date: "March 2021",
-      status: "Active",
-      credentialId: "MDB-DEV-2021-778899",
-      description: "Certification validating proficiency in MongoDB database design, development, and administration.",
-      skills: ["NoSQL Databases", "Data Modeling", "Aggregation", "Indexing", "Performance Optimization"],
-      logo: "🗄️"
-    },
-    {
-      name: "Docker Certified Associate (DCA)",
-      issuer: "Docker, Inc.",
-      date: "November 2020",
-      status: "Active",
-      credentialId: "DCA-2020-334455",
-      description: "Certification demonstrating expertise in containerization and Docker platform management.",
-      skills: ["Containerization", "Docker Compose", "Swarm", "Security", "Registry Management"],
-      logo: "🐳"
     }
   ];
 

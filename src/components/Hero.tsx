@@ -24,12 +24,11 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-4 text-white/90 font-medium">
-            Senior Software Engineer & Cloud Solutions Architect
+            Cybersecurity Systems Adminstrator - IAM
           </p>
           
           <p className="text-lg mb-12 text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Passionate about building scalable applications and leading innovative teams. 
-            Specialized in cloud architecture, full-stack development, and DevOps practices.
+            Bridging security and usability through robust IAM, cloud, and infrastructure solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

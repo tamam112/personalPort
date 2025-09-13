@@ -5,26 +5,11 @@ import { GraduationCap, Calendar, MapPin, Award } from "lucide-react";
 const Education = () => {
   const education = [
     {
-      institution: "Stanford University",
-      degree: "Master of Science in Computer Science",
-      specialization: "Artificial Intelligence & Machine Learning",
-      location: "Stanford, CA",
-      period: "2015 - 2017",
-      gpa: "3.9/4.0",
-      achievements: [
-        "Summa Cum Laude graduate",
-        "Teaching Assistant for Advanced Algorithms",
-        "Published research on distributed systems optimization"
-      ],
-      coursework: ["Machine Learning", "Distributed Systems", "Advanced Algorithms", "Computer Vision", "Natural Language Processing"]
-    },
-    {
-      institution: "University of California, Berkeley",
-      degree: "Bachelor of Science in Computer Science",
-      specialization: "Software Engineering",
-      location: "Berkeley, CA",
-      period: "2011 - 2015",
-      gpa: "3.8/4.0",
+  institution: "University of Toronto",
+  degree: "Bachelor of Business Administration",
+  specialization: "Management and Computer Science",
+  location: "Toronto, ON",
+  period: "2020-2024",
       achievements: [
         "Dean's List for 6 consecutive semesters",
         "President of Computer Science Students Association",
@@ -64,10 +49,6 @@ const Education = () => {
                       <div className="flex items-center gap-1">
                         <Calendar className="w-3 h-3" />
                         <span>{edu.period}</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <Award className="w-3 h-3" />
-                        <span>GPA: {edu.gpa}</span>
                       </div>
                     </div>
                   </div>
