@@ -28,7 +28,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-  url: "https://linkedin.com/in/tamammakki",
+      url: "https://www.linkedin.com/in/tamammakki/",
       color: "text-blue-600"
     },
     {
