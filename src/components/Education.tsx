@@ -10,11 +10,7 @@ const Education = () => {
   specialization: "Management and Computer Science",
   location: "Toronto, ON",
   period: "2020-2024",
-      achievements: [
-        "Dean's List for 6 consecutive semesters",
-        "President of Computer Science Students Association",
-        "Winner of Annual Hackathon 2014"
-      ],
+      // achievements removed
       coursework: ["Data Structures", "Software Engineering", "Database Systems", "Computer Networks", "Operating Systems"]
     }
   ];
@@ -56,18 +52,6 @@ const Education = () => {
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-professional-navy mb-3">Achievements & Honors</h4>
-                  <ul className="space-y-1 text-muted-foreground">
-                    {edu.achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex items-start gap-2">
-                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
-                        <span>{achievement}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
                 <div>
                   <h4 className="font-semibold text-professional-navy mb-3">Relevant Coursework</h4>
                   <div className="flex flex-wrap gap-2">

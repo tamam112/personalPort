@@ -11,7 +11,13 @@ const Certifications = () => {
   status: "Active",
   credentialId: "AWS-ASA-2023-001234",
   description: "need to add description",
-      skills: ["Cloud Architecture", "Security", "Migration", "Cost Optimization", "Well-Architected Framework"],
+      skills: [
+        "Access control & account management",
+        "Security operations & monitoring",
+        "Risk identification & mitigation",
+        "Network & system security",
+        "Disaster recovery & business continuity"
+      ],
       logo: "🏆"
     },
     {
@@ -21,7 +27,13 @@ const Certifications = () => {
       status: "Active",
       credentialId: "CKA-2023-567890",
   description: "need to add description",
-      skills: ["Container Orchestration", "Cluster Management", "Networking", "Security", "Troubleshooting"],
+      skills: [
+        "Threat & vulnerability management",
+        "Network security & firewalls",
+        "Identity & access management (IAM)",
+        "Cryptography & secure protocols",
+        "Risk assessment & incident response"
+      ],
       logo: "⚙️"
     },
     {
@@ -31,7 +43,13 @@ const Certifications = () => {
       status: "Active",
       credentialId: "GCP-PCA-2022-112233",
   description: "need to add description",
-      skills: ["GCP Services", "Infrastructure Design", "Security", "Data Analytics", "Machine Learning"],
+      skills: [
+        "Hardware & software troubleshooting",
+        "Operating system installation & configuration",
+        "Basic networking (TCP/IP, Wi-Fi, LAN/WAN)",
+        "Device & peripheral support",
+        "IT operational procedures & best practices"
+      ],
       logo: "☁️"
     }
   ];
@@ -77,7 +95,7 @@ const Certifications = () => {
               <div className="mb-4">
                 <h4 className="font-semibold text-professional-navy mb-2 text-sm">Key Skills:</h4>
                 <div className="flex flex-wrap gap-1">
-                  {cert.skills.slice(0, 3).map((skill, idx) => (
+                  {cert.skills.map((skill, idx) => (
                     <Badge 
                       key={idx} 
                       variant="outline" 
@@ -86,11 +104,6 @@ const Certifications = () => {
                       {skill}
                     </Badge>
                   ))}
-                  {cert.skills.length > 3 && (
-                    <Badge variant="outline" className="text-xs text-muted-foreground">
-                      +{cert.skills.length - 3} more
-                    </Badge>
-                  )}
                 </div>
               </div>
 

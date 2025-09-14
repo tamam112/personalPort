@@ -5,43 +5,43 @@ import { Calendar, MapPin, Building } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
-      company: "TechCorp Solutions",
-      position: "Senior Software Engineer & Team Lead",
-      location: "San Francisco, CA",
-      period: "2021 - Present",
-      description: "Led a team of 8 engineers developing microservices architecture for e-commerce platform serving 2M+ users. Implemented CI/CD pipelines reducing deployment time by 60%.",
+      company: "Niagara Health",
+      position: "Cybersecurity Systems Administrator",
+      location: "St. Catharines, ON",
+      period: "February 2024 – Present",
+      description: null,
       achievements: [
-        "Architected scalable microservices handling 10K+ requests/second",
-        "Reduced system latency by 45% through performance optimization",
-        "Mentored 5 junior developers, 3 received promotions"
+  "Configure and enforce Role-Based Access Control policies in SailPoint to align access with job functions, reducing excessive privilege assignments",
+        "Manage Privileged Access Management using CyberArk, monitoring elevated accounts, securing credentials, and mitigating insider threat risks",
+        "Administer and troubleshoot authentication services through Azure AD and Duo, managing conditional access policies and identity federation for critical hospital systems"
       ],
-      technologies: ["React", "Node.js", "AWS", "Docker", "Kubernetes", "PostgreSQL"]
+      technologies: []
     },
     {
-      company: "Innovation Labs",
-      position: "Full Stack Developer",
-      location: "New York, NY",
-      period: "2019 - 2021",
-      description: "Developed and maintained web applications for fintech clients. Collaborated with UX/UI designers to create responsive, user-friendly interfaces.",
+      company: "NSUS Group Inc.",
+      position: "IT Specialist",
+      location: "North York, ON",
+      period: "July 2024 – February 2025",
+      description: null,
       achievements: [
-        "Built real-time trading platform processing $1M+ daily volume",
-        "Implemented automated testing reducing bugs by 70%",
-        "Integrated payment systems for 50+ financial institutions"
+        "Developed shell scripts to automate routine tasks, leading to a 22% increase in operational efficiency and a reduction in repetitive work by 7 hours per week",
+        "Established a tiered support system that prioritized urgent technical issues, handling over 25 critical cases per week, leading to improved service delivery and reduced downtime for key business operations by 20%",
+        "Configured and managed endpoint protection using Bitdefender GravityZone, enhancing organizational security and reducing endpoint vulnerabilities by 14%"
       ],
-      technologies: ["Python", "Django", "React", "PostgreSQL", "Redis", "AWS"]
+      technologies: []
     },
     {
-      company: "StartupXYZ",
-      position: "Frontend Developer",
-      location: "Austin, TX",
-      period: "2017 - 2019",
-      description: "Developed responsive web applications and mobile-first designs. Worked in agile environment with rapid iteration cycles.",
+      company: "K-Line Group of Companies",
+      position: "IT Support Specialist Intern",
+      location: "Whitchurch-Stouffville, ON",
+      period: "December 2022 – August 2023",
+      description: null,
       achievements: [
-        "Created component library used across 10+ projects",
-        "Improved page load speeds by 50% through optimization",
-        "Collaborated with design team to implement pixel-perfect UIs"
+        "Resolved 80% of support tickets within 1 hour, significantly enhancing response time and boosting end-user productivity by 18%",
+        "Administered over 350 devices and managed user permissions via Azure AD, ensuring compliance with organizational security policies and reducing unauthorized access incidents by 12%",
+        "Authored SOPs (technical documentation) for routine IT processes, streamlining workflows and reducing onboarding time for new team members by 34%"
       ],
-      technologies: ["JavaScript", "Vue.js", "SCSS", "Webpack", "Firebase"]
+      technologies: []
     }
   ];
 

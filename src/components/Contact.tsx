@@ -6,21 +6,16 @@ const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      label: "Email",
-  value: "tamam.makki@email.com",
-  link: "mailto:tamam.makki@email.com"
+    label: "Email",
+  value: "tamammakki@yahoo.com",
+  link: "mailto:tamammakki@yahoo.com"
     },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567"
-    },
+    // Phone entry removed
     {
       icon: MapPin,
-      label: "Location",
-      value: "San Francisco, CA",
-      link: null
+  label: "Location",
+  value: "Toronto, ON",
+  link: null
     }
   ];
 
@@ -113,36 +108,17 @@ const Contact = () => {
               <h3 className="text-2xl font-bold mb-6">Let's Work Together</h3>
               
               <p className="mb-8 text-white/90 leading-relaxed">
-                I'm always excited to take on new challenges and collaborate on innovative projects. 
-                Whether you're looking for a technical lead, architect, or senior developer, 
-                I'd love to hear about your vision and discuss how we can bring it to life.
+                I’m passionate about technology and always eager to expand my skills in cybersecurity and technology. I enjoy tackling challenges, learning new tools, and contributing to projects that make a real impact. If you’re looking for someone motivated, detail-oriented, and ready to grow with your team, I’d love to connect and hear about your vision.
               </p>
 
-              <div className="space-y-4">
-                <Button 
-                  size="lg" 
-                  className="w-full bg-white/10 backdrop-blur-sm border border-white/20 text-white hover:bg-white/20 hover:border-white/30 transition-all duration-300"
-                >
-                  <Mail className="w-5 h-5 mr-2" />
-                  Send Me an Email
-                </Button>
-                
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="w-full bg-transparent border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all duration-300"
-                >
-                  <ExternalLink className="w-5 h-5 mr-2" />
-                  View My Portfolio
-                </Button>
-              </div>
+              {/* Buttons removed as requested */}
 
               <div className="mt-8 pt-8 border-t border-white/20">
                 <p className="text-sm text-white/80">
                   <strong>Response Time:</strong> I typically respond within 24 hours
                 </p>
                 <p className="text-sm text-white/80 mt-1">
-                  <strong>Availability:</strong> Open to full-time, contract, and consulting opportunities
+                  <strong>Availability:</strong> Currently employed — always open to collaboration and knowledge sharing.
                 </p>
               </div>
             </Card>
