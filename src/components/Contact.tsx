@@ -41,11 +41,11 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 bg-section-bg">
+  <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 id="contact" className="text-4xl font-bold mb-6 text-professional-navy">Get In Touch</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 id="contact" className="text-4xl font-bold mb-6 text-professional-navy dark:text-white">Get In Touch</h2>
+          <p className="text-xl text-muted-foreground dark:text-muted-foreground max-w-3xl mx-auto">
             Let's connect and discuss opportunities, collaborations, or just have a great conversation about technology
           </p>
         </div>
@@ -53,8 +53,8 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact Information */}
-            <Card className="p-8 border-0 shadow-lg bg-white">
-              <h3 className="text-2xl font-bold text-professional-navy mb-6">Contact Information</h3>
+            <Card className="p-8 border-0 shadow-lg bg-card dark:bg-gradient-to-br dark:from-primary dark:to-accent dark:text-white">
+              <h3 className="text-2xl font-bold text-professional-navy dark:text-white mb-6">Contact Information</h3>
               
               <div className="space-y-6">
                 {contactInfo.map((item, index) => {
@@ -65,16 +65,16 @@ const Contact = () => {
                         <Icon className="w-5 h-5 text-white" />
                       </div>
                       <div>
-                        <p className="font-medium text-professional-navy">{item.label}</p>
+                        <p className="font-medium text-professional-navy dark:text-white">{item.label}</p>
                         {item.link ? (
                           <a 
                             href={item.link} 
-                            className="text-muted-foreground hover:text-primary transition-colors"
+                            className="text-muted-foreground dark:text-white hover:text-primary transition-colors"
                           >
                             {item.value}
                           </a>
                         ) : (
-                          <p className="text-muted-foreground">{item.value}</p>
+                          <p className="text-muted-foreground dark:text-white">{item.value}</p>
                         )}
                       </div>
                     </div>
@@ -83,7 +83,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-100">
-                <h4 className="font-semibold text-professional-navy mb-4">Follow Me</h4>
+                <h4 className="font-semibold text-professional-navy dark:text-white mb-4">Follow Me</h4>
                 <div className="flex gap-4">
                   {socialLinks.map((social, index) => {
                     const Icon = social.icon;

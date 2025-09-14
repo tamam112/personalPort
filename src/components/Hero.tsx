@@ -100,9 +100,19 @@ const Hero = ({ setResetRef }: { setResetRef?: (cb: () => void) => void }) => {
         </div>
         
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <button
+          type="button"
+          aria-label="Scroll to About Me"
+          onClick={() => {
+            const aboutSection = document.querySelector("#about");
+            if (aboutSection) {
+              aboutSection.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce focus:outline-none"
+        >
           <ArrowDown className="w-6 h-6 text-white/70" />
-        </div>
+        </button>
       </div>
     </section>
   );

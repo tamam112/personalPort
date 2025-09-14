@@ -66,41 +66,41 @@ All colors MUST be HSL.
 
   .dark {
     --background: 220 13% 8%; /* near black */
-    --foreground: 0 0% 90%; /* light grey */
+    --foreground: 220 15% 85%; /* muted blue-grey */
 
-    --card: 220 8% 13%; /* dark grey */
-    --card-foreground: 0 0% 90%;
+    --card: 220 13% 10%; /* very dark blue */
+    --card-foreground: 220 15% 85%;
 
-    --popover: 220 8% 13%;
-    --popover-foreground: 0 0% 90%;
+    --popover: 220 13% 10%;
+    --popover-foreground: 220 15% 85%;
 
-    --primary: 220 100% 60%; /* blue accent */
-    --primary-foreground: 0 0% 100%;
+    --primary: 220 100% 20%; /* deep navy blue */
+    --primary-foreground: 220 15% 85%;
 
-    --secondary: 220 6% 20%; /* medium grey */
-    --secondary-foreground: 0 0% 90%;
+    --secondary: 220 30% 15%; /* dark blue-grey */
+    --secondary-foreground: 220 15% 85%;
 
-    --muted: 220 4% 30%; /* muted grey */
-    --muted-foreground: 0 0% 70%;
+    --muted: 220 15% 12%; /* muted dark blue */
+    --muted-foreground: 220 10% 60%;
 
-    --accent: 220 100% 60%; /* blue accent */
-    --accent-foreground: 0 0% 100%;
+    --accent: 220 100% 18%; /* deep navy blue */
+    --accent-foreground: 220 15% 85%;
 
-    --destructive: 0 0% 30%; /* dark grey for destructive */
-    --destructive-foreground: 0 0% 90%;
+    --destructive: 220 30% 12%; /* dark blue-grey for destructive */
+    --destructive-foreground: 220 15% 85%;
 
-    --border: 220 6% 20%;
-    --input: 220 6% 20%;
-    --ring: 220 100% 60%; /* blue accent for focus ring */
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 220 100% 20%; /* deep navy blue for focus ring */
 
     --sidebar-background: 220 13% 8%;
-    --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 220 100% 60%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 220 6% 20%;
-    --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 220 6% 20%;
-    --sidebar-ring: 220 100% 60%;
+    --sidebar-foreground: 220 15% 85%;
+    --sidebar-primary: 220 100% 20%;
+    --sidebar-primary-foreground: 220 15% 85%;
+    --sidebar-accent: 220 30% 15%;
+    --sidebar-accent-foreground: 220 15% 85%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 220 100% 20%;
   }
 }
 

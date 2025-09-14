@@ -49,8 +49,8 @@ const Experience = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-professional-navy">Work Experience</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <h2 className="text-4xl font-bold mb-6 text-professional-navy dark:text-white">Work Experience</h2>
+          <p className="text-xl text-muted-foreground dark:text-white max-w-3xl mx-auto">
             A journey of building innovative solutions and leading high-performing teams
           </p>
         </div>
@@ -66,10 +66,10 @@ const Experience = () => {
               {/* Timeline dot */}
               <div className="absolute left-6 top-8 w-4 h-4 bg-gradient-to-br from-primary to-accent rounded-full border-4 border-white shadow-lg z-10"></div>
               
-              <Card className="ml-20 mb-8 p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white">
+              <Card className="ml-20 mb-8 p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-card">
                 <div className="flex flex-wrap items-start justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold text-professional-navy mb-1">{exp.position}</h3>
+                    <h3 className="text-xl font-bold text-professional-navy dark:text-white mb-1">{exp.position}</h3>
                     <div className="flex items-center gap-4 text-muted-foreground mb-2">
                       <div className="flex items-center gap-1">
                         <Building className="w-4 h-4" />
@@ -81,7 +81,7 @@ const Experience = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex items-center gap-1 text-primary font-medium">
+                  <div className="flex items-center gap-1 text-primary dark:text-muted-foreground font-medium">
                     <Calendar className="w-4 h-4" />
                     <span>{exp.period}</span>
                   </div>
@@ -90,7 +90,7 @@ const Experience = () => {
                 <p className="text-muted-foreground mb-4 leading-relaxed">{exp.description}</p>
 
                 <div className="mb-4">
-                  <h4 className="font-semibold text-professional-navy mb-2">Key Achievements:</h4>
+                  <h4 className="font-semibold text-professional-navy dark:text-white mb-2">Key Achievements:</h4>
                   <ul className="list-disc list-inside space-y-1 text-muted-foreground">
                     {exp.achievements.map((achievement, idx) => (
                       <li key={idx}>{achievement}</li>
@@ -99,7 +99,7 @@ const Experience = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-professional-navy mb-2">Technologies:</h4>
+                  <h4 className="font-semibold text-professional-navy dark:text-white mb-2">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, idx) => (
                       <Badge 

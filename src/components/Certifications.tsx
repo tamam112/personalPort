@@ -58,12 +58,12 @@ const Certifications = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-6 text-professional-navy">Certifications</h2>
+          <h2 className="text-4xl font-bold mb-6 text-professional-navy dark:text-white">Certifications</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {certifications.map((cert, index) => (
-            <Card key={index} className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-white group">
+            <Card key={index} className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-card group">
               <div className="flex items-start justify-between mb-4">
                 <div className="text-3xl">{cert.logo}</div>
                 <div className="flex items-center gap-1">
@@ -74,7 +74,7 @@ const Certifications = () => {
                 </div>
               </div>
 
-              <h3 className="text-lg font-bold text-professional-navy mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-lg font-bold text-professional-navy dark:text-white mb-2">
                 {cert.name}
               </h3>
               
@@ -93,13 +93,13 @@ const Certifications = () => {
               </p>
 
               <div className="mb-4">
-                <h4 className="font-semibold text-professional-navy mb-2 text-sm">Key Skills:</h4>
+                <h4 className="font-semibold text-professional-navy dark:text-white mb-2 text-sm">Key Skills:</h4>
                 <div className="flex flex-wrap gap-1">
                   {cert.skills.map((skill, idx) => (
                     <Badge 
                       key={idx} 
                       variant="outline" 
-                      className="text-xs bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 text-professional-navy"
+                      className="text-xs bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 text-professional-navy dark:text-muted-foreground"
                     >
                       {skill}
                     </Badge>
