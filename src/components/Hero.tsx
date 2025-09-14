@@ -90,7 +90,7 @@ const Hero = ({ setResetRef }: { setResetRef?: (cb: () => void) => void }) => {
                 Get In Touch
               </Button>
             </a>
-            <a href="/TamamM_Resume_AUG2025.pdf" download target="_blank" rel="noopener noreferrer">
+            <a href="/TamamM_Resume_2025.pdf" download target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="bg-transparent border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all duration-300">
                 <Download className="w-5 h-5 mr-2" />
                 Download Resume

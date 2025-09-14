@@ -8,7 +8,7 @@ const Experience = () => {
       company: "Niagara Health",
       position: "Cybersecurity Systems Administrator",
       location: "St. Catharines, ON",
-      period: "February 2024 – Present",
+  period: "February 2025 – Present",
       description: null,
       achievements: [
   "Configure and enforce Role-Based Access Control policies in SailPoint to align access with job functions, reducing excessive privilege assignments",
