@@ -79,8 +79,8 @@ const Hero = ({ setResetRef }: { setResetRef?: (cb: () => void) => void }) => {
             <span className="inline-block animate-pulse">{typedSubtitle.length < subtitleText.length && typedText.length === fullText.length ? "|" : ""}</span>
           </p>
 
-          <p className="text-lg mb-12 text-white/80 max-w-2xl mx-auto leading-relaxed min-h-[2.5rem]">
-            <span className="inline-block whitespace-pre">{descText}</span>
+          <p className="text-base sm:text-lg mb-12 text-white/80 max-w-2xl mx-auto leading-relaxed min-h-[2.5rem] break-words whitespace-normal">
+            {descText}
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
