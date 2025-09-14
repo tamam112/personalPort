@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Moon, Sun, Menu, X } from "lucide-react";
+import TypewriterResetContext from "@/context/TypewriterResetContext";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -13,8 +14,9 @@ const Navbar = () => {
     }
   }, [darkMode]);
 
+  const resetTypewriter = useContext(TypewriterResetContext);
   const navLinks = [
-    { href: "#hero", label: "Home" },
+    { href: "#hero", label: "Home", onClick: () => resetTypewriter && resetTypewriter() },
     { href: "#about", label: "About" },
     { href: "#experience", label: "Experience" },
     { href: "#certifications", label: "Certifications" },
@@ -38,7 +40,16 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-10 text-professional-navy dark:text-white font-medium justify-center w-full">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a href={link.href} className="hover:text-accent transition-colors" onClick={() => setMenuOpen(false)}>{link.label}</a>
+              <a
+                href={link.href}
+                className="hover:text-accent transition-colors"
+                onClick={e => {
+                  setMenuOpen(false);
+                  if (link.onClick) link.onClick();
+                }}
+              >
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
@@ -61,7 +72,10 @@ const Navbar = () => {
                   key={link.href}
                   href={link.href}
                   className="hover:text-accent transition-colors text-lg"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={e => {
+                    setMenuOpen(false);
+                    if (link.onClick) link.onClick();
+                  }}
                 >
                   {link.label}
                 </a>
